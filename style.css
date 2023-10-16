@@ -9,6 +9,103 @@ body {
     text-align: center;
 }
 
+/* layouts */
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #070707;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+.skills_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+    font-size: 1.125em;
+    text-align: left;
+	line-height: 2;
+    font: sans-serif;
+}
+
+.title {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+    font: sans-serif;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.skills {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+	font-size: 0.95rem;
+}
+
+
+.employment_item {
+	margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-column {
+    flex: 1; /* Adjust this value to control the left column width */
+}
+
+.right-column {
+    flex: 3;
+}
+
+.three-column-text {
+    margin-top: 2rem;
+    justify-content: space-between;
+    column-count: 3;
+    column-gap: 0;
+}
+
+.item_description {
+    margin-top: 0; /* Remove top margin from the description */
+}
+
+.item_preTitle {
+	font-size: 1rem;
+	color: var(--text-color);
+	font-weight: 300;
+    margin-left: 3rem;
+}
+
+.item_title {
+	text-align:left;
+    font-size: 1rem;
+	color: black;
+	font-weight: 400;
+    margin-left: 3rem;
+    margin-top: 0;
+    white-space: nowrap;
+}
+.item_subtitle {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 400;
+    margin-left: 3rem;
+}
+
 a {
     color: #48D;
     text-decoration: none;
@@ -232,7 +329,7 @@ h4 a:hover {
 }
 
 .description {
-    color: #999;
+    color: black;
     display: block;
     line-height: 18px;
     margin-left: 15px;
