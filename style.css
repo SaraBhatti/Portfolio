@@ -337,7 +337,7 @@ h4 a:hover {
     margin-bottom: 15px;
     margin-top: 0px;
     padding: auto;
-    font-size: 1.25em;
+    font-size: 1.20em;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: left;
@@ -598,3 +598,13 @@ h4 a:hover {
         background-color: rgb(50,50,50);
     }
 }
+
+
+.center-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+
+
