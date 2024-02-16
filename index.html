@@ -63,16 +63,27 @@
 
                 <!-- Portfolio Item -->
 
-            <a href="https://github.com/SaraBhatti/CricketData/Cricket%20Analysis%20pr.pptx" download class="card">Download Cricket Analysis pr.pptx</a>
-                    <div class="content">
-                        <img src="img/Cricket present.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">PowerPoint</div>
-                            <div class="title">Data Scraping & Analytics</div>
-                            <div class="description">PowerPoint presentation to present process and finding of the Cricket Analysis project</div>
-                        </div>
-                    </div>
-                </a>
+<div class="card" id="downloadCard">
+    <a href="https://github.com/SaraBhatti/CricketData/Cricket%20Analysis%20pr.pptx" class="card-link">
+        <div class="content">
+            <img src="img/Cricket present.png" alt="Card Image" height="390" width="390"></img>
+            <div class="card-body">
+                <div class="subtitle">PowerPoint</div>
+                <div class="title">Data Scraping & Analytics</div>
+                <div class="description">PowerPoint presentation to present process and finding of the Cricket Analysis project</div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<script>
+    document.getElementById('downloadCard').addEventListener('click', function() {
+        var downloadLink = this.querySelector('.card-link');
+        downloadLink.setAttribute('download', 'Cricket Analysis pr.pptx');
+        downloadLink.click();
+    });
+</script>
+
 
             
 
