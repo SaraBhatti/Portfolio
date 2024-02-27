@@ -62,41 +62,34 @@
             <div class="grid">
 
                 <!-- Portfolio Item -->
+                <!-- Cricket Project--!>
 
-<div class="card" id="downloadCard">
-    <a href="./Cricket Analysis  pr.pptx" class="card-link">
-        <div class="content">
-            <img src="img/Cricket present.png" alt="Card Image" height="390" width="390"></img>
-            <div class="card-body">
-                <div class="subtitle">PowerPoint</div>
-                <div class="title">Data Scraping & Analytics</div>
-                <div class="description">Presentation slides showcasing the process and findings of the Cricket Analysis project</div>
-            </div>
+<!-- Popup Content -->
+<div id="popupCard" class="popup-card">
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="slide1.jpg" style="width:100%">
         </div>
-    </a>
+        <div class="mySlides fade">
+            <img src="slide2.jpg" style="width:100%">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Buttons aligned to the left -->
+    <div class="popup-buttons">
+        <a href="https://github.com/SaraBhatti/CricketData" class="popup-button">GitHub</a>
+        <a href="data-source-link" class="popup-button">Data Source</a>
+    </div>
 </div>
 
 <script>
-    document.getElementById('downloadCard').addEventListener('click', function() {
-        var downloadLink = this.querySelector('.card-link');
-        downloadLink.setAttribute('download', 'Cricket Analysis  pr.pptx');
-        downloadLink.click();
-    });
+    function openPopup() {
+        document.getElementById('popupCard').style.display = 'block';
+    }
 </script>
 
-
-            
-
-                <a href="https://github.com/SaraBhatti/CricketData" class="card">
-                    <div class="content">
-                        <img src="img/Cricket.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">MACHINE LEARNING</div>
-                            <div class="title">Data Scraping & Analytics</div>
-                            <div class="description">Use of Python to scrape data, followed by an exploratory analysis on the dataset for the development of machine learning models</div>
-                        </div>
-                    </div>
-                </a>
 
                 <a href="https://github.com/SaraBhatti/FakeNews" class="card">
                     <div class="content">
