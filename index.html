@@ -61,8 +61,7 @@
             <div class="grid">
 
                 <!-- Portfolio Item -->
-                <!-- Cricket Project--!>
-
+               <!-- Cricket Project Card -->
 <div class="card" id="projectCard">
     <div class="content">
         <img src="img/Cricket.png" alt="Card Image" height="390" width="390"></img>
@@ -77,30 +76,34 @@
 
 <!-- Popup Content -->
 <div id="popupCard" class="popup-card" style="display: none;">
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="slide1.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="slide2.jpg" style="width:100%">
-        </div>
-        <!-- Add more slides as needed -->
+    <!-- Close button -->
+    <span class="close-button" onclick="closePopup()">&times;</span>
+    
+    <!-- Project Explanation -->
+    <div class="popup-section">
+        <h2>Project Explanation</h2>
+        <p>This section provides an overview of the Cricket project...</p>
     </div>
 
+    <!-- Tools Used -->
+    <div class="popup-section">
+        <h2>Tools Used</h2>
+        <p>Python, libraries XYZ, etc.</p>
+    </div>
+
+    <!-- Project Details -->
+    <div class="popup-section">
+        <h2>Project Details</h2>
+        <p>Details about the project...</p>
+    </div>
+    
     <!-- Buttons aligned to the left -->
-    <div class="popup-buttons" >
-        <button onclick="openPopup()" class="button">View Project</button>
+    <div class="popup-buttons">
         <a href="https://github.com/SaraBhatti/CricketData" class="popup-button">GitHub</a>
         <a href="data-source-link" class="popup-button">Data Source</a>
     </div>
 </div>
 
-<script>
-    function openPopup() {
-        document.getElementById('popupCard').style.display = 'block';
-    }
-</script>
 
 
                 <!-- Fake News Project--!>
