@@ -61,7 +61,8 @@
             <div class="grid">
 
                 <!-- Portfolio Item -->
-               <!-- Cricket Project Card -->
+               
+   <!-- Cricket Project Card -->
 <div class="card" id="projectCard">
     <div class="content">
         <img src="img/Cricket.png" alt="Card Image" height="390" width="390"></img>
@@ -74,46 +75,38 @@
     </div>
 </div>
 
-<!-- Popup Content -->
-<div id="popupCard" class="popup-card" style="display: none;">
-    <!-- Close button -->
-    <span class="close-button" onclick="closePopup()">&times;</span>
-    
-    <!-- Project Explanation -->
-    <div class="popup-section">
-        <h2>Project Explanation</h2>
-        <p>This section provides an overview of the Cricket project...</p>
-    </div>
+<!-- Popup Overlay -->
+<div id="popupOverlay" class="popup-overlay">
+    <!-- Popup Content -->
+    <div id="popupContent" class="popup-content">
+        <!-- Close button -->
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        
+        <!-- Project Explanation -->
+        <div class="popup-section">
+            <h2>Project Explanation</h2>
+            <p>This section provides an overview of the Cricket project...</p>
+        </div>
 
-    <!-- Tools Used -->
-    <div class="popup-section">
-        <h2>Tools Used</h2>
-        <p>Python, libraries XYZ, etc.</p>
-    </div>
+        <!-- Tools Used -->
+        <div class="popup-section">
+            <h2>Tools Used</h2>
+            <p>Python, libraries XYZ, etc.</p>
+        </div>
 
-    <!-- Project Details -->
-    <div class="popup-section">
-        <h2>Project Details</h2>
-        <p>Details about the project...</p>
-    </div>
-    
-    <!-- Buttons aligned to the left -->
-    <div class="popup-buttons">
-        <a href="https://github.com/SaraBhatti/CricketData" class="popup-button">GitHub</a>
-        <a href="data-source-link" class="popup-button">Data Source</a>
+        <!-- Project Details -->
+        <div class="popup-section">
+            <h2>Project Details</h2>
+            <p>Details about the project...</p>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="popup-buttons">
+            <a href="https://github.com/SaraBhatti/CricketData" class="popup-button">GitHub</a>
+            <a href="data-source-link" class="popup-button">Data Source</a>
+        </div>
     </div>
 </div>
-
-<!-- JavaScript -->
-<script>
-    function openPopup() {
-        document.getElementById('popupCard').style.display = 'block';
-    }
-
-    function closePopup() {
-        document.getElementById('popupCard').style.display = 'none';
-    }
-</script>
 
 
 
