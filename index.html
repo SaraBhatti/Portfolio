@@ -113,19 +113,58 @@
 </div>
 
 
+<!-- Fake News Project Card -->
 
-                <!-- Fake News Project--!>
 
-                <a href="https://github.com/SaraBhatti/FakeNews" class="card">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Modal Popup Example</title>
+                <link rel="stylesheet" href="styles.css">
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+                </head>
+                <body>
+                
+                <div class="card">
                     <div class="content">
-                        <img src="img/Fake News.png" alt="Card Image" height="390" width="390"></img>
+                        <img src="img/Fake News.png" alt="Card Image" height="390" width="390">
                         <div class="card-body">
-                            <div class="subtitle">MACHINE LEARNING - BERT</div>
+                            <div class="subtitle">Machine Learning - BERT</div>
                             <div class="title">Fake News Predictor</div>
-                            <div class="description">Using supervised learning algorithm to explore a Fake News dataset and generate a predictive model for Fake News employing BERT</div>
+                            <a href="#" class="view-project-link" onclick="openModal()">View Project</a>
                         </div>
                     </div>
-                </a>
+                </div>
+                
+                <!-- Modal Popup -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h1 class="heading">Project Details</h1>
+                        <div class="line"></div>
+                        <section class="project-details">
+                            <h2>Project Description</h2>
+                            <p>Using supervised learning algorithm to explore a Fake News dataset and generate a predictive model for Fake News employing BERT.</p>
+                            <h3>Tools Used</h3>
+                            <div class="tools-used">
+                                <div class="capsule">TensorFlow</div>
+                                <div class="capsule">Python</div>
+                            </div>
+                        </section>
+                        <div class="buttons">
+                            <a href="https://github.com/SaraBhatti/FakeNews" target="_blank" title="View Project on GitHub">
+                                <img src="img/github.png" alt="GitHub">
+                            </a>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7135231579550806017/" target="_blank" title="View Project Engagement on LinkedIn">
+                                <img src="img/linkedin.png" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script src="portfoliosara.js"></script>
+                
+                </body>
+                </html>
+                                
 
                 <a href="https://predict-your-heart.streamlit.app/" class="card">
                     <div class="content">
