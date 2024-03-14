@@ -63,11 +63,11 @@
             <div class="grid">
 
                 <!-- Portfolio Item -->
-                       
+
 <!-- Cricket Project Card -->
 <div class="card" id="projectCard">
     <div class="content">
-        <img src="img/Cricket.png" alt="Card Image" height="390" width="390"></img>
+        <img src="img/Cricket.png" alt="Card Image" height="390" width="390">
         <div class="card-body">
             <div class="subtitle">MACHINE LEARNING</div>
             <div class="title">Data Scraping & Analytics</div>
@@ -77,38 +77,32 @@
     </div>
 </div>
 
-<!-- Popup Overlay -->
-<div id="popupOverlay" class="popup-overlay">
-    <!-- Popup Content -->
-    <div id="popupContent" class="popup-content">
-        <!-- Close button -->
-        <span class="close-button" onclick="closePopup()">&times;</span>
-        
-        <!-- Project Explanation -->
-        <div class="popup-section">
-            <h2>Project Explanation</h2>
-            <p>This section provides an overview of the Cricket project...</p>
-        </div>
-
-        <!-- Tools Used -->
-        <div class="popup-section">
-            <h2>Tools Used</h2>
-            <p>Python, libraries XYZ, etc.</p>
-        </div>
-
-        <!-- Project Details -->
-        <div class="popup-section">
-            <h2>Project Details</h2>
-            <p>Details about the project...</p>
-        </div>
-        
-        <!-- Buttons -->
-        <div class="popup-buttons">
-            <a href="https://github.com/SaraBhatti/CricketData" class="popup-button">GitHub</a>
-            <a href="data-source-link" class="popup-button">Data Source</a>
+<!-- Modal Popup -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1 class="heading">Project Details</h1>
+        <div class="line"></div>
+        <section class="project-details">
+            <h2>Project Description</h2>
+            <p>Using Python to scrape data, followed by an exploratory analysis on the dataset for the development of machine learning models.</p>
+            <h3>Tools Used</h3>
+            <div class="tools-used">
+                <div class="capsule">Python</div>
+            </div>
+        </section>
+        <div class="buttons">
+            <a href="#" target="_blank" title="View Project on GitHub">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+            <a href="#" target="_blank" title="View Project Engagement on LinkedIn">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
         </div>
     </div>
 </div>
+
+<script src="https://raw.githubusercontent.com/SaraBhatti/Portfolio/blob/main/portfoliosara.js"></script>
 
 
 <!-- Fake News Project Card -->
@@ -118,8 +112,6 @@
                 <title>Modal Popup Example</title>
                 <link rel="stylesheet" href="styles.css">
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-                </head>
-                <body>
                 
                 <div class="card">
                     <div class="content">
@@ -160,9 +152,6 @@
                 
 <script src="https://raw.githubusercontent.com/SaraBhatti/Portfolio/blob/main/portfoliosara.js"></script>
 
-                
-                </body>
-                </html>
                                 
 
                 <a href="https://predict-your-heart.streamlit.app/" class="card">
