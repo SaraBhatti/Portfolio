@@ -5,7 +5,7 @@ body {
     margin: 0px;
     line-height: 30px;
     display: block;
-    font-family: Helvetica, Arial, sans-serif, Montserrat;
+    font-family: Helvetica, sans-serif, Montserrat;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ body {
 	font-weight: 700;
 	font-size: 2rem;
 	text-transform: uppercase;
-    font: sans-serif;
+    font: 'Montserrat', sans-serif;;
 }
 
 .column-container {
@@ -65,7 +65,7 @@ body {
 
 
 .left-column {
-    flex: 1; /* Adjust this value to control the left column width */
+    flex: 1; 
 }
 
 .right-column {
@@ -80,7 +80,7 @@ body {
 }
 
 .item_description {
-    margin-top: 0; /* Remove top margin from the description */
+    margin-top: 0; 
 }
 
 .item_preTitle {
@@ -265,6 +265,16 @@ h4 a:hover {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
+}
+
+.card .subtitle,
+.card .title,
+.card .description {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card .view-project-link {
+    margin-top: 20px;
 }
 
 .item {
@@ -611,9 +621,6 @@ h4 a:hover {
 	--vs-primary: 29 92 255;
 }
 
-
-/* styles.css */
-
 .modal {
     display: none;
     position: fixed;
@@ -740,4 +747,13 @@ h4 a:hover {
 
 .view-project-link:hover {
     background-color: #0056b3;
+}
+
+
+.modal-content h3.project-description-header {
+    font-size: 20px; 
+}
+
+.modal-content h3.project-details-header {
+    font-size: 30px;
 }
