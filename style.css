@@ -5,7 +5,7 @@ body {
     margin: 0px;
     line-height: 30px;
     display: block;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif, Montserrat;
     text-align: center;
 }
 
@@ -606,103 +606,138 @@ h4 a:hover {
     text-align: justify;
 }
 
-
-/* Popup card styles */
-.popup-card {
-    display: none; /* Hidden by default */
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 400px;
-    margin: auto;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+	--vs-primary: 29 92 255;
 }
 
 
-/* Popup card styles */
-.popup-card {
+/* styles.css */
+
+.modal {
     display: none;
     position: fixed;
-    top: 50%;
+    z-index: 1;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
-    width: 600px;
-    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
 }
 
-/* Popup sections */
-.popup-section {
-    margin-bottom: 20px;
+.modal-content {
+    padding: 30px;
 }
 
-
-/* Popup Overlay */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-    z-index: 1000;
-}
-
-/* Popup Content */
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff; /* White background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
-    max-width: 80%;
-    text-align: center;
-}
-
-/* Close button */
-.close-button {
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
-    cursor: pointer;
     font-size: 24px;
-    color: #333; /* Dark color for contrast */
+    cursor: pointer;
 }
 
-/* Popup sections */
-.popup-section {
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.line {
+    border-top: 2px solid #000;
+    margin: 15px 0;
+}
+
+.project-details {
     margin-bottom: 20px;
 }
 
-/* Popup buttons */
-.popup-buttons {
-    display: flex;
-    justify-content: center;
+.tools-used .capsule {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.popup-button {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #337ab7; /* Blue color */
-    color: #fff; /* White text */
+.buttons a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttons span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #007bff;
     text-decoration: none;
-    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons span:hover {
+    text-decoration: underline;
+}
+
+
+.buttons a {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.buttons img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.3s;
+}
+
+.buttons a:hover img {
+    opacity: 0.5; /* 50% transparent on hover */
+}
+
+/* Tooltips */
+.buttons a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.buttons a:hover::after {
+    opacity: 1;
+    bottom: -40px;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.view-project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.view-project-link:hover {
+    background-color: #0056b3;
 }
