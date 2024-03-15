@@ -1,16 +1,21 @@
 function openModal(modalId) {
-  var modal = document.getElementById(modalId);
-  if (modal) {
-      modal.style.display = "block";
-  }
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    } else {
+        console.error("Modal with ID '" + modalId + "' not found.");
+    }
 }
 
 function closeModal(modalId) {
-  var modal = document.getElementById(modalId);
-  if (modal) {
-      modal.style.display = "none";
-  }
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    } else {
+        console.error("Modal with ID '" + modalId + "' not found.");
+    }
 }
+
 
 
 
