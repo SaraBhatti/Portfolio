@@ -1,16 +1,18 @@
 function openModal(modalId) {
-    var modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = "block";
-    }
+  var modal = document.getElementById(modalId);
+  if (modal) {
+      modal.style.display = "block";
+  }
 }
 
 function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = "none";
-    }
+  var modal = document.getElementById(modalId);
+  if (modal) {
+      modal.style.display = "none";
+  }
 }
+
+
 
 
 function predictNews() {
