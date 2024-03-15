@@ -1,21 +1,31 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
 // Function to open the modal
-function openModal() {
-  modal.style.display = "block";
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "block";
+  } else {
+    console.error("Modal with ID " + modalId + " not found.");
+  }
 }
 
 // Function to close the modal
-function closeModal() {
-  modal.style.display = "none";
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "none";
+  } else {
+    console.error("Modal with ID " + modalId + " not found.");
+  }
 }
 
-// Close the modal if user clicks outside of it
+// Close the modal if the user clicks outside of it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
+  var modals = document.querySelectorAll(".modal");
+  modals.forEach(function(modal) {
+    if (event.target == modal) {
+      closeModal(modal.id);
+    }
+  });
 }
 
 
