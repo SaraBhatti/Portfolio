@@ -26,15 +26,19 @@
 
     <body>
 
-        <!-- Navigation Bar -->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="rightVerticalLine">Sara Bhatti</a>
-            <a href="saracv(2).html" target="_blank">View CV</a>
-            <a class="downloadBtn" href="./Sara Bhatti CV Sept.pdf" download="Resume.pdf">Download CV</a>
-            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()">
-                <img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button">
-            </a>
-        </div>
+<!-- Navigation Bar -->
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="rightVerticalLine">Sara Bhatti</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#connect">Connect</a>
+    <!--<a href="saracv(2).html" target="_blank">View CV</a>-->
+    <a class="downloadBtn" href="./CV Sara Bhatti 2024 April.pdf" download="Resume.pdf">Download CV</a>
+    <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()">
+        <img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button">
+    </a>
+</div>
+
 
 
 <!-- Header with Image & Text -->
@@ -47,221 +51,230 @@
     </div>
 </div>
 
-<h2>About Me</h2>
-<div class="center-text">
-<!-- Section -->
-<p>Hello! I am Sara, lover of numbers and cooking!  I have made a bold career change diving into data. Recently completed a Data Science program, equipped with skills in reporting, data visualization, documentation, qualitative and quantitative analysis, and proficiency in tools such as MS Packages, Tableau, Python, and SQL. Have a look at the projects I have been working on, I would love to connect!</p>
+<div id="about">
+    <h2>About Me</h2>
+    <div class="center-text">
+    <!-- Section -->
+    <p>Hello! I am Sara, lover of numbers and cooking!  I have made a bold career change diving into data. Recently completed a Data Science program, equipped with skills in reporting, data visualization, documentation, qualitative and quantitative analysis, and proficiency in tools such as MS Packages, Tableau, Python, and SQL. Have a look at the projects I have been working on, I would love to connect!</p>
+    </div>
 </div>
-        
 
 <!-- Description Section -->
 <div class="descriptionDiv">
 
-<!-- Section -->
-<h2>Project Grid</h2>
+    <div id="projects">
+    <!-- Section -->
+    <h2>Project Grid</h2>
 
-<!-- Portfolio Grid -->
-<div class="grid">
+    <!-- Portfolio Grid -->
+    <div class="grid">
 
-<!-- Portfolio Item -->
+    <!-- Portfolio Item -->
 
-<script src="portfoliosara.js"></script>
-            
-<!-- Cricket Project Card -->
-<div class="card" id="projectCard1">
-    <div class="content">
-        <img src="img/Cricket.png" alt="Card Image" height="390" width="390">
-        <div class="card-body">
-            <div class="subtitle">MACHINE LEARNING</div>
-            <div class="title">Data Analytics</div>
-             <a href="#" class="view-project-link" onclick="openModal('myModal1')">View Project</a>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Popup -->
-<div id="myModal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('myModal1')">&times;</span>
-        <h1 class="heading">Cricket Analysis</h1>
-        <div class="line"></div>
-        <section class="project-details">
-            <h3>Project Description</h3>
-            <p>Using Python to scrape data, followed by an exploratory analysis on the dataset for the development of machine learning models.</p>
-            <h3>Tools Used</h3>
-            <div class="tools-used">
-                <div class="capsule">Python</div>
-                <div class="capsule">Logistic Regression</div>
-                <div class="capsule">Random Forest</div>
-            </div>
-        </section>
-        <div class="buttons">
-            <a href="https://github.com/SaraBhatti/CricketData" target="_blank" title="View Project on GitHub">
-                <img src="img/github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142630496320057344/" target="_blank" title="View Project Engagement on LinkedIn">
-                <img src="img/linkedin.png" alt="LinkedIn">
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- Fake News Project Card -->
-<div class="card" id="projectCard2">
-    <div class="content">
-        <img src="img/Fake News.png" alt="Card Image" height="390" width="390">
-        <div class="card-body">
-            <div class="subtitle">MACHINE LEARNING - BERT</div>
-            <div class="title">Fake News Predictor</div>
-            <a href="#" class="view-project-link" onclick="openModal('myModal2')">View Project</a>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Popup -->
-<div id="myModal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('myModal2')">&times;</span>
-        <h1 class="heading">Fake News Predictor</h1>
-        <div class="line"></div>
-        <section class="project-details">
-            <h3>Project Description</h3>
-            <p>Using supervised learning algorithm to explore a Fake News dataset and generate a predictive model for Fake News employing BERT.</p>
-            <h3>Tools Used</h3>
-            <div class="tools-used">
-                <div class="capsule">TensorFlow</div>
-                <div class="capsule">Python</div>
-                <div class="capsule">BERT</div>
-            </div>
-        </section>
-        <div class="buttons">
-            <a href="https://github.com/SaraBhatti/FakeNews" target="_blank" title="View Project on GitHub">
-                <img src="img/github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7135231579550806017/" target="_blank" title="View Project Engagement on LinkedIn">
-                <img src="img/linkedin.png" alt="LinkedIn">
-            </a>
-        </div>
-    </div>
-</div>                          
-
-
-<!--Heart Failure Project Card  -->
-<div class="card" id="projectCard2">
-    <div class="content">
-        <img src="img/PredictHF.png" alt="Card Image" height="390" width="390">
-        <div class="card-body">
-            <div class="subtitle">MACHINE LEARNING</div>
-            <div class="title">Heart Failure Predictor</div>
-            <a href="#" class="view-project-link" onclick="openModal('myModal3')">View Project</a>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Popup -->
-<div id="myModal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('myModal3')">&times;</span>
-        <h1 class="heading">Heart Failure Predictor</h1>
-        <div class="line"></div>
-        <section class="project-details">
-            <h3>Project Description</h3>
-            <p>Utilising Artificial Neural Networks for Heart Failure Prediction. With the data, I have also created a tool with streamlit to predict heart failure.</p>
-            <h3>Tools Used</h3>
-            <div class="tools-used">
-                <div class="capsule">Python</div>
-                <div class="capsule">Logistic Regression</div>
-                <div class="capsule">Tensorflow</div>
-                <div class="capsule">Streamlit</div>
-            </div>
-        </section>
-        <div class="buttons">
-            <a href="https://github.com/SaraBhatti/Heart-Failure-ANN" target="_blank" title="View Project on GitHub">
-                <img src="img/github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142630496320057344/" target="_blank" title="View Project Engagement on LinkedIn">
-                <img src="img/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://predict-your-heart.streamlit.app/" target="_blank" title="View Streamlit App">
-                <img src="img/streamlit.png" alt="Streamlit" class="streamlit-icon">
-            </a>
-        </div>
-    </div>
-</div>
-
+    <script src="portfoliosara.js"></script>
                 
-                <a href="https://github.com/SaraBhatti/DiabetesML" class="card">
-                    <div class="content">
-                        <img src="img/Diabetes ML.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">ML in PYTHON</div>
-                            <div class="title">Diabetes Predictor</div>
-                            <div class="description">Using Maching Learning Models to predict the prevelance of Diabetes</div>
-                        </div>
-                    </div>
-                </a>
+    <!-- Cricket Project Card -->
+    <div class="card" id="projectCard1">
+        <div class="content">
+            <img src="img/Cricket.png" alt="Card Image" height="390" width="390">
+            <div class="card-body">
+                <div class="subtitle">MACHINE LEARNING</div>
+                <div class="title">Data Analytics</div>
+                <a href="#" class="view-project-link" onclick="openModal('myModal1')">View Project</a>
+            </div>
+        </div>
+    </div>
 
-                <a href="https://github.com/SaraBhatti/Assignment_DiceRolling" class="card">
-                    <div class="content">
-                        <img src="img/Dice.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">PYTHON CODE</div>
-                            <div class="title">Dice Rolling Game</div>
-                            <div class="description">When the code executes, it will select a number at random from a range of 1 to 6.</div>
-                        </div>
-                    </div>
+    <!-- Modal Popup -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="heading">Cricket Analysis</h1>
+            <div class="line"></div>
+            <section class="project-details">
+                <h3>Project Description</h3>
+                <p>Using Python to scrape data, followed by an exploratory analysis on the dataset for the development of machine learning models.</p>
+                <h3>Tools Used</h3>
+                <div class="tools-used">
+                    <div class="capsule">Python</div>
+                    <div class="capsule">Logistic Regression</div>
+                    <div class="capsule">Random Forest</div>
+                </div>
+            </section>
+            <div class="buttons">
+                <a href="https://github.com/SaraBhatti/CricketData" target="_blank" title="View Project on GitHub">
+                    <img src="img/github.png" alt="GitHub">
                 </a>
-
-                <!-- Portfolio Item -->
-                <a href="https://github.com/SaraBhatti/Assignments_GuessTheNumber" class="card">
-                    <div class="content">
-                        <img src="img/number.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">PYTHON CODE</div>
-                            <div class="title">Guess the Number</div>
-                            <div class="description">This project employs Python's random module. The code will generate a number of undisclosed value through randomisation.</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="https://github.com/SaraBhatti/TextBasedAdventure/blob/main/TextAdv(long).py" class="card">
-                    <div class="content">
-                        <img src="img/zombie.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">PYTHON CODE</div>
-                            <div class="title">Text Based Adventure Game</div>
-                            <div class="description">Zombie Adventure Game: The software allows users to navigate through different rooms by responding to user input and provides descriptions for each room.</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="https://github.com/SaraBhatti/MatLibHGenerator/tree/main" class="card">
-                    <div class="content">
-                        <img src="img/matlib.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">PYTHON CODE</div>
-                            <div class="title">MatLib Generator</div>
-                            <div class="description">The programme prompts the user to enter a series of inputs. The programme will then inout these prompts to create a story.</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="https://github.com/SaraBhatti/EarthquakesTDA" class="card">
-                    <div class="content">
-                        <img src="img/earthquake.png" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">PowerPoint</div>
-                            <div class="title">Earthquakes</div>
-                            <div class="description">Using the linked dataset to produce a series of visualisations demonstrating the use of Matplotlib.</div>
-                        </div>
-                    </div>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142630496320057344/" target="_blank" title="View Project Engagement on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
                 </a>
             </div>
-
         </div>
+    </div>
+
+    <!-- Fake News Project Card -->
+    <div class="card" id="projectCard2">
+        <div class="content">
+            <img src="img/Fake News.png" alt="Card Image" height="390" width="390">
+            <div class="card-body">
+                <div class="subtitle">MACHINE LEARNING - BERT</div>
+                <div class="title">Fake News Predictor</div>
+                <a href="#" class="view-project-link" onclick="openModal('myModal2')">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="heading">Fake News Predictor</h1>
+            <div class="line"></div>
+            <section class="project-details">
+                <h3>Project Description</h3>
+                <p>Using supervised learning algorithm to explore a Fake News dataset and generate a predictive model for Fake News employing BERT.</p>
+                <h3>Tools Used</h3>
+                <div class="tools-used">
+                    <div class="capsule">TensorFlow</div>
+                    <div class="capsule">Python</div>
+                    <div class="capsule">BERT</div>
+                </div>
+            </section>
+            <div class="buttons">
+                <a href="https://github.com/SaraBhatti/FakeNews" target="_blank" title="View Project on GitHub">
+                    <img src="img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7135231579550806017/" target="_blank" title="View Project Engagement on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>                          
+
+
+    <!--Heart Failure Project Card  -->
+    <div class="card" id="projectCard2">
+        <div class="content">
+            <img src="img/PredictHF.png" alt="Card Image" height="390" width="390">
+            <div class="card-body">
+                <div class="subtitle">MACHINE LEARNING</div>
+                <div class="title">Heart Failure Predictor</div>
+                <a href="#" class="view-project-link" onclick="openModal('myModal3')">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="heading">Heart Failure Predictor</h1>
+            <div class="line"></div>
+            <section class="project-details">
+                <h3>Project Description</h3>
+                <p>Utilising Artificial Neural Networks for Heart Failure Prediction. With the data, I have also created a tool with streamlit to predict heart failure.</p>
+                <h3>Tools Used</h3>
+                <div class="tools-used">
+                    <div class="capsule">Python</div>
+                    <div class="capsule">Logistic Regression</div>
+                    <div class="capsule">Tensorflow</div>
+                    <div class="capsule">Streamlit</div>
+                </div>
+            </section>
+            <div class="buttons">
+                <a href="https://github.com/SaraBhatti/Heart-Failure-ANN" target="_blank" title="View Project on GitHub">
+                    <img src="img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7142630496320057344/" target="_blank" title="View Project Engagement on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://predict-your-heart.streamlit.app/" target="_blank" title="View Streamlit App">
+                    <img src="img/streamlit.png" alt="Streamlit" class="streamlit-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <a href="https://github.com/SaraBhatti/DiabetesML" class="card">
+                        <div class="content">
+                            <img src="img/Diabetes ML.png" alt="Card Image" height="390" width="390"></img>
+                            <div class="card-body">
+                                <div class="subtitle">ML in PYTHON</div>
+                                <div class="title">Diabetes Predictor</div>
+                                <div class="description">Using Maching Learning Models to predict the prevelance of Diabetes</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/SaraBhatti/Assignment_DiceRolling" class="card">
+                        <div class="content">
+                            <img src="img/Dice.png" alt="Card Image" height="390" width="390"></img>
+                            <div class="card-body">
+                                <div class="subtitle">PYTHON CODE</div>
+                                <div class="title">Dice Rolling Game</div>
+                                <div class="description">When the code executes, it will select a number at random from a range of 1 to 6.</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Portfolio Item -->
+                    <a href="https://github.com/SaraBhatti/Assignments_GuessTheNumber" class="card">
+                        <div class="content">
+                            <img src="img/number.png" alt="Card Image" height="390" width="390"></img>
+                            <div class="card-body">
+                                <div class="subtitle">PYTHON CODE</div>
+                                <div class="title">Guess the Number</div>
+                                <div class="description">This project employs Python's random module. The code will generate a number of undisclosed value through randomisation.</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Portfolio Item -->
+                    <a href="https://github.com/SaraBhatti/TextBasedAdventure/blob/main/TextAdv(long).py" class="card">
+                        <div class="content">
+                            <img src="img/zombie.png" alt="Card Image" height="390" width="390"></img>
+                            <div class="card-body">
+                                <div class="subtitle">PYTHON CODE</div>
+                                <div class="title">Text Based Adventure Game</div>
+                                <div class="description">Zombie Adventure Game: The software allows users to navigate through different rooms by responding to user input and provides descriptions for each room.</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Portfolio Item -->
+                    <a href="https://github.com/SaraBhatti/MatLibHGenerator/tree/main" class="card">
+                        <div class="content">
+                            <img src="img/matlib.png" alt="Card Image" height="390" width="390"></img>
+                            <div class="card-body">
+                                <div class="subtitle">PYTHON CODE</div>
+                                <div class="title">MatLib Generator</div>
+                                <div class="description">The programme prompts the user to enter a series of inputs. The programme will then inout these prompts to create a story.</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Portfolio Item -->
+                    <a href="https://github.com/SaraBhatti/EarthquakesTDA" class="card">
+                        <div class="content">
+                            <img src="img/earthquake.png" alt="Card Image" height="390" width="390"></img>
+                            <div class="card-body">
+                                <div class="subtitle">PowerPoint</div>
+                                <div class="title">Earthquakes</div>
+                                <div class="description">Using the linked dataset to produce a series of visualisations demonstrating the use of Matplotlib.</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+</div>
+
+<section id="testimonials">
+    <!-- Content for the Testimonials section goes here -->
+</section>
+
+<section id="connect">
 
         <!-- Socials -->
         <div class="textBubbleDiv">
@@ -281,6 +294,8 @@
                 <p><strong><a href="saraybhatti@yahoo.co.uk">saraybhatti@yahoo.co.uk</a></strong></p>
             </div>
         </div>
+
+</section>
 
         <div class="footer">
             <p class="subtle"><i>Thank you for taking the time for view my portfolio.</i></p>
