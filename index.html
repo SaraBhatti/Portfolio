@@ -21,10 +21,13 @@
         <link rel="shortcut icon" type="image/png" href="img/ai.png">
 
         <!-- Page Style -->
-        <link rel="stylesheet" type="text/css" href="style.css?version=2">    
+        <link rel="stylesheet" type="text/css" href="style.css?version=2">   
+        
+        <!-- Java Script -->
+        <script src="portfoliosara.js"></script>
     </head>
 
-    <body>
+<body>
 
 <!-- Navigation Bar -->
 <div class="topnav" id="myTopnav">
@@ -63,17 +66,15 @@
 <div class="descriptionDiv">
 
     <div id="projects">
-    <!-- Section -->
+<!-- Section -->
     <h2>Project Grid</h2>
 
-    <!-- Portfolio Grid -->
+<!-- Portfolio Grid -->
     <div class="grid">
 
-    <!-- Portfolio Item -->
-
-    <script src="portfoliosara.js"></script>
+<!-- Portfolio Item -->    
                 
-    <!-- Cricket Project Card -->
+<!-- Cricket Project Card -->
     <div class="card" id="projectCard1">
         <div class="content">
             <img src="img/Cricket.png" alt="Card Image" height="390" width="390">
@@ -85,7 +86,7 @@
         </div>
     </div>
 
-    <!-- Modal Popup -->
+<!-- Modal Popup Cricket -->
     <div id="myModal1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('myModal1')">&times;</span>
@@ -134,7 +135,7 @@
         </div>
     </div>
 
-    <!-- Modal Popup -->
+    <!-- Modal Popup Fake News -->
     <div id="myModal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('myModal2')">&times;</span>
@@ -142,7 +143,7 @@
             <div class="line"></div>
             <section class="project-details">
         <h3>Project Description</h3>
-                <p>Using supervised learning algorithm to explore a Fake News dataset, I generated a predictive model for Fake News employing BERT.</p>
+                <p>I using supervised learning algorithm to explore a Fake News dataset, I generated a predictive model for Fake News employing BERT.</p>
                 <p>I also conducted some exploratory analysis based on the data to explore what the data looked like, which can be seen in the PowerPoint presentation and the Jupiter notebook in the GitHub link below.</p>
                 <p>For this Project I based my model on the work by Abayomi Bello, which can be found <a href="https://www.researchgate.net/publication/366811050_A_BERT_Framework_to_Sentiment_Analysis_of_Tweets?latestCitations=PB%3A374796188" target="_blank">here</a>.
                 </p>
@@ -170,8 +171,8 @@
     </div>                          
 
 
-    <!--Heart Failure Project Card  -->
-    <div class="card" id="projectCard2">
+<!--Heart Failure Project Card  -->
+    <div class="card" id="projectCard3">
         <div class="content">
             <img src="img/PredictHF.png" alt="Card Image" height="390" width="390">
             <div class="card-body">
@@ -182,7 +183,7 @@
         </div>
     </div>
 
-    <!-- Modal Popup -->
+<!-- Modal Popup Heart Failure -->
     <div id="myModal3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('myModal3')">&times;</span>
@@ -217,40 +218,125 @@
         </div>
     </div>
 
-                    
-                    <a href="https://github.com/SaraBhatti/DiabetesML" class="card">
-                        <div class="content">
-                            <img src="img/Diabetes ML.png" alt="Card Image" height="390" width="390"></img>
-                            <div class="card-body">
-                                <div class="subtitle">ML in PYTHON</div>
-                                <div class="title">Diabetes Predictor</div>
-                                <div class="description">Using Maching Learning Models to predict the prevelance of Diabetes</div>
-                            </div>
-                        </div>
-                    </a>
+<!--Diabetes Project Card  -->             
+<div class="card" id="projectCard4">
+    <div class="content">
+        <img src="img/Diabetes ML.png" alt="Card Image" height="390" width="390"></img>
+        <div class="card-body">
+            <div class="subtitle">ML in PYTHON</div>
+            <div class="title">Diabetes Predictor</div>
+            <a href="#" class="view-project-link" onclick="openModal('myModal4')">View Project</a>
+        </div>
+    </div>
 
-                    <a href="https://github.com/SaraBhatti/Assignment_DiceRolling" class="card">
-                        <div class="content">
-                            <img src="img/Dice.png" alt="Card Image" height="390" width="390"></img>
-                            <div class="card-body">
-                                <div class="subtitle">PYTHON CODE</div>
-                                <div class="title">Dice Rolling Game</div>
-                                <div class="description">When the code executes, it will select a number at random from a range of 1 to 6.</div>
-                            </div>
-                        </div>
-                    </a>
+<!-- Modal Popup Diabetes --> 
+<div id="myModal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="heading">Diabetes Predictor</h1>
+            <div class="line"></div>
+            <section class="project-details">
+                <h3>Project Description</h3>
+                <p>Maching Learning Models to predict the prevelance of Diabetes</p>
+        <h3>Tools Used</h3>
+                <div class="tools-used">
+                    <div class="capsule">Python</div>
+                </div>
+            </section>
+        <h3>See More of the Project</h3>
+            <div class="buttons">
+                <a href="https://github.com/SaraBhatti/DiabetesML" target="_blank" title="View Project on GitHub">
+                    <img src="img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/posts/sara-bhatti-66963325_developeracademy-machinelearning-healthtech-activity-7134854735337021440-VSYl?utm_source=share&utm_medium=member_desktop" target="_blank" title="View Project Engagement on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+<!--Dice Rolling Project Card  --> 
+<div class="card" id="projectCard5">
+    <div class="content">
+        <img src="img/Dice.png" alt="Card Image" height="390" width="390">
+        <div class="card-body">
+        <div class="subtitle">PYTHON CODE</div>
+        <div class="title">Dice Rolling Game</div>
+        <a href="#" class="view-project-link" onclick="openModal('myModal5')">View Project</a>
+    </a>
+        </div>
+    </div>
+</div>
 
-                    <!-- Portfolio Item -->
-                    <a href="https://github.com/SaraBhatti/Assignments_GuessTheNumber" class="card">
-                        <div class="content">
-                            <img src="img/number.png" alt="Card Image" height="390" width="390"></img>
-                            <div class="card-body">
-                                <div class="subtitle">PYTHON CODE</div>
-                                <div class="title">Guess the Number</div>
-                                <div class="description">This project employs Python's random module. The code will generate a number of undisclosed value through randomisation.</div>
-                            </div>
-                        </div>
-                    </a>
+
+<!--Modal Popup Dice Rrolling  -->
+<div id="myModal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+            <h1 class="heading">Dice Rrolling</h1>
+            <div class="line"></div>
+            <section class="project-details">
+                <h3>Project Description</h3>
+                <p>When the code executes, it will select a number at random from a range of 1 to 6.</p>
+        <h3>Tools Used</h3>
+                <div class="tools-used">
+                    <div class="capsule">Python</div>
+                </div>
+            </section>
+        <h3>See More of the Project</h3>
+            <div class="buttons">
+                <a href="https://github.com/SaraBhatti/DiceRollingGame" target="_blank" title="View Project on GitHub">
+                    <img src="img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/posts/sara-bhatti-66963325_by-making-use-of-pythons-randomrandint-activity-7123624381972410368-Jol3?utm_source=share&utm_medium=member_desktop" target="_blank" title="View Project Engagement on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+    </div>
+</div>
+
+
+<!-- Portfolio Item -->
+<!--Guess the Number Project Card  --> 
+<div class="card" id="projectCard6">
+    <div class="content">
+        <img src="img/number.png" alt="Card Image" height="390" width="390">
+        <div class="card-body">
+        <div class="subtitle">PYTHON CODE</div>
+        <div class="title">Guess the Number</div>
+        <a href="#" class="view-project-link" onclick="openModal('myModal6')">View Project</a>
+    </a>
+        </div>
+    </div>
+</div>
+
+<!--Modal Popup Guess the Number  -->
+<div id="myModal6" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+            <h1 class="heading">Dice Rrolling</h1>
+            <div class="line"></div>
+            <section class="project-details">
+                <h3>Project Description</h3>
+                <p>This project employs Python's random module. The code will generate a number of undisclosed value through randomisation.</p>
+        <h3>Tools Used</h3>
+                <div class="tools-used">
+                    <div class="capsule">Python</div>
+                </div>
+            </section>
+        <h3>See More of the Project</h3>
+            <div class="buttons">
+                <a href="https://github.com/SaraBhatti/GuessTheNumber" target="_blank" title="View Project on GitHub">
+                    <img src="img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/posts/sara-bhatti-66963325_yet-another-beneficial-learning-project-with-activity-7123979211836420096-2VJo?utm_source=share&utm_medium=member_desktop" target="_blank" title="View Project Engagement on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+    </div>
+</div>
+
 
                     <!-- Portfolio Item -->
                     <a href="https://github.com/SaraBhatti/TextBasedAdventure/blob/main/TextAdv(long).py" class="card">
